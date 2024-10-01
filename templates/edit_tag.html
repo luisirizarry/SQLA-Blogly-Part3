@@ -1,18 +1,17 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <h1>Edit a tag</h1>
-    <div>
-        <form action="/tags/{{tag.id}}/edit" method="POST">
-            <div>
+    <div class="edit-tag-page">
+        <h1 class="page-title">Edit a tag</h1>
+        <form class="edit-tag-form" action="/tags/{{tag.id}}/edit" method="POST">
+            <div class="form-group">
                 <label for="tagName">Name</label>
                 <input type="text" name="tagName" id="tagName" placeholder="{{ tag.name }}" required>
             </div>
-            <div>
+            <div class="form-actions">
                 <a class="cancel-link" href="/users">Cancel</a>
-                <button type="submit">Add</button>
+                <button class="save-button" type="submit">Save</button>
             </div>
         </form>
     </div>
-    
 {% endblock %}

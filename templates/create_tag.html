@@ -1,18 +1,17 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <h1>Create a tag</h1>
-    <div>
-        <form action="/tags/new" method="POST">
-            <div>
+    <div class="create-tag-page">
+        <h1 class="page-title">Create a tag</h1>
+        <form class="create-tag-form" action="/tags/new" method="POST">
+            <div class="form-group">
                 <label for="tagName">Name</label>
                 <input type="text" name="tagName" id="tagName" placeholder="Enter a name for the tag" required>     
             </div>
-            <div>
+            <div class="form-actions">
                 <a class="cancel-link" href="/tags">Cancel</a>
-                <button type="submit">Add</button>    
+                <button class="save-button" type="submit">Add</button>    
             </div>
         </form>
     </div>    
-    
 {% endblock %}

@@ -1,14 +1,18 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <h1>Tags</h1>
-    <ul>
-        {% for tag in tags %}
-            <li>
-                <a href="/tags/{{tag.id}}">{{tag.name}}</a>
-            </li>
-        {% endfor %}
-    </ul>
-    <a href="/tags/new">Add Tag</a>
-    <a href="/users">Home</a>
+    <div class="tags-page">
+        <h1 class="page-title">Tags</h1>
+        <ul class="tags-list">
+            {% for tag in tags %}
+                <li class="tag-item">
+                    <a class="tag-link" href="/tags/{{tag.id}}">{{tag.name}}</a>
+                </li>
+            {% endfor %}
+        </ul>
+        <div class="tag-actions">
+            <a class="add-tag-link button" href="/tags/new">Add Tag</a>
+            <a class="home-link button" href="/users">Home</a>
+        </div>
+    </div>
 {% endblock %}
