@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="users-page">
+        <h1 class="page-title">Users</h1>
+        <ul class="users-list">
+            {% for user in users %}
+                <li class="user-item">
+                    <a class="user-link" href="/users/{{user.id}}">{{ user.get_full_name() }}</a>
+                </li>     
+            {% endfor %}
+        </ul>
+        <form class="add-user-form" action="/users/new">
+            <button class="add-user-button">Add User</button>
+        </form>
+        <form class="add-tag-form" action="/tags/new" method="GET">
+            <button class="add-tag-button">Add Tag</button>
+        </form>
+    </div>
+{% endblock %}

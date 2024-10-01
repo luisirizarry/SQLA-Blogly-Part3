@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif; /* Set a default font for the body */
+}
+
+.page {
+    padding: 20px;
+}
+
+/* Common title styles */
+.page-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* List styles */
+.users-list, .post-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+.user-item, .post-item {
+    margin-bottom: 8px;
+}
+
+/* Link styles */
+.user-link,
+.go-back-link,
+.post-link,
+.edit-link {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.user-link:hover,
+.go-back-link:hover,
+.post-link:hover,
+.edit-link:hover {
+    text-decoration: underline;
+}
+
+.add-post-link {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #28a745;
+    font-weight: bold;
+}
+
+.add-post-link:hover {
+    text-decoration: underline;
+}
+
+/* Form styles */
+form {
+    display: inline;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"], textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+
+/* Button styles */
+button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.add-user-button {
+    background-color: #28a745;
+    color: white;
+}
+
+.add-user-button:hover {
+    background-color: #218838;
+}
+
+.add-tag-button {
+    background-color: #2f00ff;
+    color: white;
+}
+
+.add-tag-button:hover {
+    background-color: #2600d1;
+}
+
+.save-button,
+.edit-button {
+    background-color: #007bff;
+    color: white;
+}
+
+.save-button:hover,
+.edit-button:hover {
+    background-color: #0056b3;
+}
+
+.delete-button {
+    background-color: #dc3545;
+    color: white;
+}
+
+.delete-button:hover {
+    background-color: #c82333;
+}
+
+/* Page alignment styles */
+.user-profile-page,
+.edit-user-page,
+.create-user-page,
+.edit-post-page,
+.view-post-page,
+.add-post-page {
+    text-align: center; /* Centers content on profile and post pages */
+}
+
+.user-image {
+    max-width: 150px; /* Set a max width for the image */
+    border-radius: 50%; /* Make it circular */
+    margin-bottom: 20px;
+}
+
+.user-details,
+.user-actions {
+    margin-bottom: 20px;
+}
+
+.user-name {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+/* Action buttons styling */
+.form-actions,
+.post-actions {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.cancel-link {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #dc3545; /* Red color for cancel link */
+}
+
+.cancel-link:hover {
+    text-decoration: underline;
+}
